@@ -1,0 +1,36 @@
+# Generated build trees and executables.
+build/
+build-*/
+cmake-build-*/
+/cases/*/repro
+/cases/*/repro-syncthreads
+/cases/*/analysis/loader
+
+# Local run outputs, experiment records, and scratch work.
+/runs/
+/results/
+/experiments/
+/.local/
+/tmp/
+
+# Generated device binaries and disassembly.
+*.cubin
+!/cases/06-block-sync/analysis/reference.cubin
+*.fatbin
+*.sass
+!/cases/06-block-sync/analysis/reference.sass
+*.o
+*.out
+*.log
+
+# Python caches.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local editor files.
+/.vscode/
+/.idea/
+*.swp
+*~
